@@ -1,8 +1,8 @@
 <template>
   <div>
-    <span class="category-select-title">CATEGORY:</span>
+    <span class="category-select-title">CATEGORY</span>
     <div class="category-select">
-      <select v-model="categorySelected" class="category-select">
+      <select v-model="categorySelected" class="select">
         <option
           v-for="category in categoriesAvailable"
           v-bind:value="category.value"
@@ -145,11 +145,9 @@ export default {
 
 .list-container {
   display: flex;
-  padding: 0;
   justify-content: center;
-  justify-items: center;
+  text-align: center;
   flex-direction: row;
-  align-content: space-between;
 }
 .line {
   transition: all 1s;
@@ -157,7 +155,46 @@ export default {
 }
 
 ul {
+  padding: 0;
   list-style-type: none;
+}
+
+select {
+  appearance: none;
+  outline: none;
+  background-color: transparent;
+  border: none;
+  padding: 0 1em 0 0;
+  margin: 0;
+  width: 100%;
+  font-family: inherit;
+  font-size: inherit;
+  cursor: inherit;
+  line-height: inherit;
+  text-align-last: center;
+}
+
+select {
+  outline: none;
+}
+
+.select {
+  width: 100%;
+  max-width: 200px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  text-align: center;
+  border: 1px solid #eee;
+  border-radius: 2px;
+  padding: 2px 5px;
+  font-weight: 600;
+  font-size: 22px;
+  cursor: pointer;
+  line-height: 1.1;
+  background-color: #fff;
+  background-image: linear-gradient(to top, #f9f9f9, #fff 33%);
+  display: grid;
 }
 
 .fade-enter,

@@ -55,11 +55,13 @@ export default {
 <style scoped>
 .card {
   display: flex;
+  justify-content: center;
   flex-direction: column;
   flex: 1;
   background-color: #30363a;
-  border-radius: 2px;
-  width: 70vw;
+  border-bottom: 2px solid white;
+  border-radius: 5px;
+  width: 60vw;
   height: 10vh;
   justify-content: center;
   align-items: center;

@@ -59,7 +59,7 @@ export default {
   flex-direction: column;
   flex: 1;
   background-color: #30363a;
-  border-bottom: 2px solid white;
+  border-bottom: 4px solid white;
   border-radius: 5px;
   width: 60vw;
   height: 10vh;

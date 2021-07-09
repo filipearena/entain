@@ -1,28 +1,28 @@
 <template>
   <div id="app">
-    <img alt="Vue logo" src="./assets/logo.png">
-    <Races msg="Welcome to Your Vue.js App"/>
+    <races />
   </div>
 </template>
 
 <script>
-import Races from './components/Races.vue'
+import Races from "./components/Races.vue";
 
 export default {
-  name: 'App',
+  name: "App",
   components: {
     Races
   }
-}
+};
 </script>
 
 <style>
+body {
+  background-color: #ff7800;
+  padding-top: 30px;
+}
 #app {
   font-family: Avenir, Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
 }
 </style>

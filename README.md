@@ -1,4 +1,4 @@
-# entain
+# Entain - Code Challenge for Filipe Arena
 
 ## Project setup
 ```
@@ -8,6 +8,11 @@ yarn install
 ### Compiles and hot-reloads for development
 ```
 yarn serve
+```
+Open browser at http://localhost:8080
+### To run unit tests (using Jest)
+```
+yarn test:unit
 ```
 
 ### Compiles and minifies for production

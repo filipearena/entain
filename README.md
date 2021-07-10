@@ -10,6 +10,7 @@ yarn install
 yarn serve
 ```
 Open browser at http://localhost:8080
+![alt text](./showcase.png)
 ### To run unit tests (using Jest)
 ```
 yarn test:unit

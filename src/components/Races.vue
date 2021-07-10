@@ -43,9 +43,9 @@ import RingLoader from "vue-spinner/src/RingLoader.vue";
 import RaceCards from "./RaceCard.vue";
 
 const API = "https://api.neds.com.au/rest/v1/racing/?method=nextraces&count=50";
-const GREYHOUND_ID = "9daef0d7-bf3c-4f50-921d-8e818c60fe61";
-const HARNESS_ID = "161d9be2-e909-4326-8c2c-35ed71fb460b";
-const HORSE_ID = "4a2788f8-e825-4d36-9894-efd4baf1cfae";
+export const GREYHOUND_ID = "9daef0d7-bf3c-4f50-921d-8e818c60fe61";
+export const HARNESS_ID = "161d9be2-e909-4326-8c2c-35ed71fb460b";
+export const HORSE_ID = "4a2788f8-e825-4d36-9894-efd4baf1cfae";
 
 const CATEGORIES = {
   [GREYHOUND_ID]: "greyhound",

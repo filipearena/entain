@@ -1,6 +1,6 @@
 <template>
   <div class="card" v-if="this.timer">
-    <div class="card-title">
+    <div class="card-title" id="card-title">
       {{ `${this.race.meeting_name} R${this.race.race_number}` }}
     </div>
     <div class="card-timer">{{ this.timer }}</div>
@@ -8,7 +8,7 @@
 </template>
 
 <script>
-const moment = require("moment");
+import moment from "moment";
 export default {
   name: "RaceCard",
   data() {

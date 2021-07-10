@@ -20,19 +20,23 @@ export default {
   props: {
     race: Object
   },
+  //On component creation, get time for this race and start the countdown to be updated every 1 second
   created() {
     this.initRaceTime();
-    this.updateRateTime();
+    this.updateRaceTime();
   },
   methods: {
-    updateRateTime() {
+    //Set the interval for updating race time, generating a countdown
+    updateRaceTime() {
       this.counter = setInterval(() => {
         this.timer = this.getCountDown(this.race.advertised_start.seconds);
       }, 1000);
     },
+    //Set first value of timer to immediately display current count
     initRaceTime() {
       this.timer = this.getCountDown(this.race.advertised_start.seconds);
     },
+    //Returns the time until the race starts in minutes
     getCountDown(time) {
       const now = moment();
       const raceTime = moment.unix(time);
@@ -59,7 +63,7 @@ export default {
   flex-direction: column;
   flex: 1;
   background-color: #30363a;
-  border-bottom: 4px solid white;
+  border-bottom: 3px solid white;
   border-radius: 5px;
   width: 60vw;
   height: 10vh;
